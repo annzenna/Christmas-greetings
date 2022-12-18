@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Cookie&display=swap" rel="stylesheet">
+    <style>
+     body {
+      width: 100%;
+      height: 100vh;
+      perspective: 1200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-image: url('winter_scene.jpg');
+      background-size: cover;
+
+    }
+
+      .card {
+      transform-style: preserve-3d;
+      position: relative;
+      align-items: right;
+      height: 200px;
+      cursor: pointer;
+    }
+
+    h1 {
+      font-family: 'Cookie', serif;
+      font-size: 80px;
+      margin-top: 80px;
+      color: white;
+    }
+
+    h5 {
+      font-family: 'Cookie', serif;
+    }
+
+    p {
+      font-size: 10px;
+    }
+
+    img{
+      margin-top: 0px;
+      width: 90px;
+      transform: scaleX(-1);
+    }
+
+    .front {
+      background: url('bg.jpg') no-repeat center darkred;
+      background-size: cover;
+    }
+
+    .page{
+      background: url('cwhq_logo.png') no-repeat center darkred;
+      background-size:55%;
+    }
+
+    .message {
+      margin-top: 10px;
+      color: #900909;
+    }
+
+    .front, .back, .page {
+      transform-style: preserve-4d;
+      transform-origin: left center;
+      transition: transform .5s ease-in-out, box-shadow .5s ease-in-out;
+      position: fixed;
+      width: 520px;
+      height: 150%;
+      top: 0;
+      center: 10;
+      background-color: #F7F7F7;
+      padding: 50px;
+    }
+
+    .card:hover .front {
+      transform: rotateY(-160deg);
+      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+    }
+
+    .card:hover .page {
+      transform: rotateY(-159deg);
+      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+    }
+
+    .card:hover .back {
+      transform: rotateY(-20deg);
+      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+    }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="back">
+          <div class="message">
+            <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+            <h4 style="text-align:left;font-size:35;font-family:Dancing Script;"><b>Dear Friends,</b></h4>
+            <p style="text-align:center;font-size:25;font-family:Dancing Script;"><i>I hope you have beautiful <b>Christmas & New Year </b>this year. I hope Santa brings you love and happiness throughout the year, not just at Christmas! From our family to yours, a very</i></p>
+            <p></p>
+            <p style="text-align:center;font-size:25;font-family:Dancing Script;"><b>'MERRY CHRISTMAS!</b>.' </p>
+          </div>
+      </div>
+      <div class="page">
+      </div>
+      <div class="front">
+        <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+        <h3 style="font-family:Dancing Script;font-size:50;color:white;"><b>MERRY CHRISTMAS</b></h3>
+      </div>
+    </div>
+  </body>
+</html>
